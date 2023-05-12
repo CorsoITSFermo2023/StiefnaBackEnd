@@ -54,11 +54,11 @@ const carrello = {
 }
 
 console.log(
-    typeof numero,
-    typeof stringa,
-    typeof booleano,
-    typeof oggetto,
-    typeof indefinito,
-    typeof funzione,
-    "Get Totale di Carrello: "+carrello.getTotale()
+    typeof numero+"\n",
+    typeof stringa+"\n",
+    typeof booleano+"\n",
+    typeof oggetto+"\n",
+    typeof indefinito+"\n",
+    typeof funzione+"\n",
+    "Get Totale di Carrello: \n"+carrello.getTotale()
 )
