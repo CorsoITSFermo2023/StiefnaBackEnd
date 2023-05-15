@@ -80,7 +80,7 @@ const primaPromise = (input) => {
   return prom;
  }
 
-primaPromise(20)
+/*primaPromise(20)
 .then(
   (risultato) => {
     return secondaPromise(risultato)
@@ -93,4 +93,16 @@ primaPromise(20)
   (errore) => {
     console.log("Mega Errore: ",errore);
   }
-);
+);*/
+
+async function run(){
+  try{
+    const output1 = await primaPromise(61);
+    const output2 = await secondaPromise(output1);
+    return output2;
+  }catch(e){
+    console.log("Funzione fallita: "+e)
+  }
+}
+
+run();
